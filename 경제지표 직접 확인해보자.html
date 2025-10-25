@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>경제지표 직접 확인해보자</title>
+    <style>
+        .header {
+            padding-bottom: 80px;
+            height: 20vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .content {
+            padding-top: 80px;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+        }
+        a {
+            text-decoration: none;
+            color: green;
+        }
+        a:hover {
+            color: gray;
+        }
+        .border-title {
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 8px;
+            font-size: 1.5em;
+        }
+        .border-title2 {
+            border: 2px solid black;
+            padding: 10px;
+            display: inline-block;
+            border-radius: 8px;
+            font-size: 1em;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">경제지표 직접 확인해보자</div>
+    <div class="content">
+        <ol>
+            <h1>미국 유동성 지표</h1>
+                <ol>
+                    <a href="https://fred.stlouisfed.org/series/RRPONTSYD" target="_blank" rel="noopener"><h2 class="border-title2">RRP(Reverse Repo)</h2></a>
+                        <p>
+                            Reverse Repo(역레포): 중앙은행(연준)이 금융기관으로부터 대출받는 것(=유동성 흡수)<br>
+                            잔액이 많다 = 유동성 흡수<br>
+                            잔액이 적다 = 유동성 공급<br>
+                        </p>
+                    <a href="https://fred.stlouisfed.org/series/WTREGEN" target="_blank" rel="noopener"><h2 class="border-title2">TGA(Treasury General Account)</h2></a>
+                        <p>
+                            잔액이 많다 = 유동성 흡수<br>
+                            잔액이 적다 = 유동성 공급<br>
+                        </p>
+                    <a href="https://fred.stlouisfed.org/series/WRBWFRBL" target="_blank" rel="noopener"><h2 class="border-title2">Reserve Balances(지급준비금)</h2></a>
+                        <p>
+                            잔액이 많다 = 유동성 공급<br>
+                            잔액이 적다 = 유동성 흡수<br>
+                            QT(양적긴축) = 중앙은행이 시중은행에 국채 매도 -> 시중은행은 연준에 예치해둔 지급준비금으로 국채 매입 -> 지금준비금 잔액 감소<br>
+                            QE(양적완화) = 중앙은행이 시중은행으로부터 국채 매입 -> 시중은행은 국채 매각 대금이 지급준비금으로 입금 -> 지급준비금 잔액 증가
+                        </p>
+                    <a href="https://fred.stlouisfed.org/series/RPONTSYD" target="_blank" rel="noopener"><h2 class="border-title2">Repo(레포)</h2></a>
+                        <p>
+                            Repo(레포): 중앙은행(연준)이 금융기관에 1일짜리 단기 대출해주는 것<br>
+                            은행은 보유하고 있던 국채를 중앙은행에 담보로 맡기고 현금 받아옴 = 급한 상황에 유동성 공급하는 수단
+                        </p>
+                </ol>
+            <a href="https://goldkimp.com/" target="_blank" rel="noopener"><h1 class="border-title">금 김치 프리미엄</h1></a><br>
+            <a href="https://kr.investing.com/indices/volatility-s-p-500" target="_blank" rel="noopener"><h1 class="border-title">VIX 공포지수</h1></a>
+        </ol>
+    </div>
+</body>
+</html>
